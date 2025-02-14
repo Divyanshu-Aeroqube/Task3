@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { FC } from 'react'
 type Props={
     imag:string,
     name:string,
     pos:string,
     desc:string
 }
-const AboutCard = ({imag,name,pos,desc}:Props) => {
+const AboutCard: FC<Props> = ({imag,name,pos,desc}) => {
   return (
-              <div className="abouCard bg-white shadow-lg rounded-lg text-center p-4">
-            <img src={imag} alt="John Doe" className="w-full h-40 object-cover" />
+    <div className="abouCard bg-white shadow-lg rounded-lg text-center p-4">
+            <img src={imag} alt="John Doe" className="w-full h-40 " />
             <h3 className="font-bold text-xl">{name}</h3>
             <h5 className="text-l">{pos}</h5>
             <p>{desc}</p>
             <div className="w-full bg-gray-400 py-1 px-3 text-center mt-3">Contact</div>
-          </div>
+        </div>
 
   )
 }

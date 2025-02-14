@@ -46,7 +46,12 @@ const About = () => {
 
         <div className="About_cardContainer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 p-4">
        { teamMembers.map((card,index)=>(
-            <AboutCard key={index} imag={card.image} name={card.name} desc={card.description} pos={card.role}/>
+            <AboutCard
+             key={index} 
+             imag={card.image} 
+             name={card.name} 
+             desc={card.description} 
+             pos={card.role}/>
         ))}
         </div>
       </section>
